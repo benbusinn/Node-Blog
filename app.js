@@ -21,11 +21,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.render("home", {page: "About", textContent: aboutContent});
+  res.render("about", {page: "About", textContent: aboutContent});
 });
 
 app.get("/contact", (req, res) => {
-  res.render("home", {page: "Contact me", textContent: contactContent});
+  res.render("contact", {page: "Contact me", textContent: contactContent});
 });
 
 app.get("/compose", (req, res) => {
